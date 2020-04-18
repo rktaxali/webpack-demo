@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <!--
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    -->
+
+    <title>Asset Management</title>
+  </head>
+  <body>
+   
+
+    <div>
+        <span id='test'>Testing</span><br>
+        <span id='spanid'>Testing2</span><br>
+        <button onclick="buttonClicked()">OK</button>
+
+    </div>
+
+
+
+    
+  
+    <script src="index.js"></script>
+ <script>
+  (function() {
+   // your page initialization code here
+   // the DOM will be available here
+   console.log("javascript ready. ");
+
+   
+   
+
+  })();
+
+   function buttonClicked()
+   {
+     console.log('clicled');
+     $('#spanid').text('span text updated......');
+   }
+
+ </script>
+
+  </body>
+</html>
