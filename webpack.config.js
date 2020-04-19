@@ -74,7 +74,7 @@ module: {
             'xml-loader',
             ],
         },
-        // added for xml files
+        // added for xml in src/xml folder 
         {
             //  for any filename 
             // starts with .   
