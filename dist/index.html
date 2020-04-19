@@ -26,9 +26,13 @@
     console.log("javascript ready. ");
   })();
 
-   function buttonClicked()
+   
+function buttonClicked()
    {
-     console.log('clicled');
+    // window.path created in index.js
+    var filename = window.path.basename('/Users/Refsnes/demo_path_new.js');
+    console.log(filename);
+
      $('#spanid').text('span text updated......');
    }
 

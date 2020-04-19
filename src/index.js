@@ -8,6 +8,12 @@ import Icon from './icon.png';
 import Data from './data.xml';
 import address from './xml/xml.xml';
 
+// path is a node.js module https://nodejs.org/api/path.html
+import * as path from 'path';
+window.path = path;   // path is not available inside '<script> tags of index.html
+                      // window.path will make 'path' available on all pages 
+var filename = path.basename('/Users/Refsnes/demo_path.js');
+console.log(filename);
 
 
 function component() {
@@ -27,6 +33,8 @@ function component() {
 
   return element;
 }
+
+
 
 
  document.body.appendChild(component());
