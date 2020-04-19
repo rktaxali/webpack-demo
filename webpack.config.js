@@ -76,7 +76,7 @@ module: {
         },
         // added for xml in src/xml folder 
         {
-            //  for any filename 
+            //  for any filename...
             // starts with .   
             // followed by /xml/ 
             // followed by any  white-space or non white sapce, any number of times, i.e. one or more words
