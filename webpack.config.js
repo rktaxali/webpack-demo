@@ -74,16 +74,23 @@ module: {
             'xml-loader',
             ],
         },
-// added for xml files
-{
-    test: /.xml$/,
-    include: [
-        path.resolve(__dirname, "src/xml")
-    ],
-    use: [
-    'xml-loader',
-    ],
-},
+        // added for xml files
+        {
+            //  for any filename 
+            // starts with .   
+            // followed by /xml/ 
+            // followed by any  white-space or non white sapce, any number of times, i.e. one or more words
+            // followed by  .xml 
+            // $ -- at the end 
+            test: /.\/xml\/[\s\S]*.xml$/,
+            include: [
+                path.resolve(__dirname, "src/xml")   // for that use path  current path of the file +   'src/xml'
+                                                     // i.e.    webpack-demo/src/xml
+            ],
+            use: [
+            'xml-loader',
+            ],
+        },
 
 
     ]

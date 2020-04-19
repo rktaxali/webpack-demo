@@ -7,8 +7,6 @@
     font-style: normal;
    }
 
-
-
 .hello {
     color: red;
     font-family: 'MyFont';  /* Added to use the MuFont family defined through @font-face */ 

@@ -6,7 +6,7 @@ import $ from 'jquery';
 window.$ = $;
 import Icon from './icon.png';
 import Data from './data.xml';
-//import address from './xml/xml.xml';
+import address from './xml/xml.xml';
 
 
 
@@ -23,7 +23,7 @@ function component() {
 
    console.log(Data);
    console.log(Data.note.heading);
-   console.log(address);
+  console.log(address);
 
   return element;
 }
