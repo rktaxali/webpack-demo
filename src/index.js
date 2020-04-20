@@ -11,7 +11,13 @@ import address from './xml/xml.xml';
 // path is a node.js module https://nodejs.org/api/path.html
 import * as path from 'path';
 window.path = path;   // path is not available inside '<script> tags of index.html
-                      // window.path will make 'path' available on all pages 
+                      // window.path will make 'path' available on all page   
+                      
+                      
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 var filename = path.basename('/Users/Refsnes/demo_path.js');
 console.log(filename);
 
